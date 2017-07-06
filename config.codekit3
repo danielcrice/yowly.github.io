@@ -60,16 +60,16 @@
 		"oAP": "\/functions\/Icon\r",
 		"oF": 0
 		},
-	"\/Icon\r": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/Icon\r",
-		"oF": 0
-		},
 	"\/images\/Icon\r": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/images\/Icon\r",
+		"oF": 0
+		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
 		"oF": 0
 		},
 	"\/sass\/Icon\r": {
@@ -98,7 +98,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 519914888,
-	"displayValue": "yowly_frame",
+	"displayValue": "yowly.github.io",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-facepalm",
 	"lastBuiltDate": 519915828
