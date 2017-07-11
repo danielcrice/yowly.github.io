@@ -60,6 +60,7 @@ header
       width: 50%
       margin-left: auto
       display: flex
+      max-width: 500px
 
       li
         display: inline-block
@@ -119,27 +120,40 @@ header
     width: 100%
     margin: 50px 0 0 0
     flex-wrap: wrap
-
     justify-content: center
+
+    .p_box:nth-child(1)
+      background-color: #FCF8F5
+
+    .p_box:nth-child(2)
+      background-color: #F9F8FF
+
+    .p_box:nth-child(4)
+      background-color: #FCF8F5
+
+    .p_box:nth-child(3)
+      background-color: #F9F8FF
 
 
 
     .p_box
-      background-color: #FCF8F5
       flex: 1
       width: 40%
       max-width: 45%
       min-width: 45%
       width: 45%
       margin: 15px
-
       -moz-box-sizing: border-box
       -webkit-box-sizing: border-box
       box-sizing: border-box
       padding: 55px
       display: flex
       flex-direction: column
+      transition-duration: 0.4s
 
+      &:hover
+        opacity: 0.7
+        transition-duration: 0.2s
 
 
       h1
@@ -148,6 +162,9 @@ header
         flex: 1
         color: #454343
         margin: 0 0 5px 0
+        min-height: 20px
+        max-height: 20px
+        height: 20px
 
       h2
         font-size: 13px
@@ -160,6 +177,8 @@ header
         flex: 1
         width: 90%
         margin: 40px auto
+
+
 
 #about
   background-color: #F9F8FF
@@ -177,7 +196,6 @@ header
     flex: 1
     width: 40%
     max-width: 40%
-    border: solid black 1px
     margin: auto
 
 
@@ -185,19 +203,14 @@ header
       font-weight: 400
       font-style: italic
       font-size: 25px
-      border: solid black 1px
-
-
-
+      margin: 0
 
     h2
       font-size: 18px
       font-weight: 300
-      border: solid black 1px
       color: #888888
 
     p
-      border: solid black 1px
       font-weight: 300
       color: #4E4E4E
 
