@@ -1,0 +1,255 @@
+ul
+  list-style: none
+
+
+a
+  text-decoration: none
+
+*
+  margin: 0
+  padding: 0
+
+/* Header */
+
+
+header
+  display: flex
+  flex-direction: column
+  width: 100%
+  background-color: #8FA4C6
+  height: 80vh
+  font-family: 'Roboto', sans-serif
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9fbae2+1,8fa4c6+100,7db9e8+100 */
+  background: #9fbae2; /* Old browsers */
+  background: -moz-linear-gradient(top, #9fbae2 1%, #8fa4c6 100%, #7db9e8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #9fbae2 1%,#8fa4c6 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9fbae2 1%,#8fa4c6 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fbae2', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+  nav
+    display: flex
+    width: 90%
+    left: 5%
+    max-height: 150px
+    height: 150px
+    position: absolute
+
+    ul:first-child
+
+      flex: 1
+      max-width: 150px
+      width: 150px
+      display: flex
+      position: relative
+      justify-content: center
+      align-items: center
+
+      img
+        width: 100%
+        margin: auto
+        flex: 1
+        display: block
+        position: relative
+
+
+
+
+    ul:last-child
+      flex: 5
+      max-width: 50%
+      width: 50%
+      margin-left: auto
+      display: flex
+
+      li
+        display: inline-block
+        flex: 1
+        margin: auto
+        text-align: center
+        text-transform: uppercase
+        font-weight: 500
+        color: white
+        letter-spacing: 2px
+
+  .hero_layout
+    color: white
+    margin: auto
+    width: 70%
+
+
+    h1
+      font-weight: 500
+      letter-spacing: 2px
+      text-transform: uppercase
+      font-size: 35px
+      max-width: 100%
+
+    h2
+      font-size: 18px
+      letter-spacing: 1px
+      font-weight: 300
+
+
+/* Projects Section */
+
+#projects
+  width: 80%
+  margin: auto
+  font-family: 'Roboto', sans-serif
+  max-width: 1000px
+  padding: 50px 0
+
+  #p_title
+
+    h1
+      font-weight: 400i
+      font-style: italic
+      margin: 0 0 5px 0
+      color: #454343
+      font-size: 20px
+    h2
+      font-weight: 300
+      color: #626262
+      font-size: 15px
+
+  .p_box_container
+    width: 100%
+    display: flex
+    max-width: 100%
+    width: 100%
+    margin: 50px 0 0 0
+    flex-wrap: wrap
+
+    justify-content: center
+
+
+
+    .p_box
+      background-color: #FCF8F5
+      flex: 1
+      width: 40%
+      max-width: 45%
+      min-width: 45%
+      width: 45%
+      margin: 15px
+
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+      padding: 55px
+      display: flex
+      flex-direction: column
+
+
+
+      h1
+        font-size: 15px
+        font-weight: 500
+        flex: 1
+        color: #454343
+        margin: 0 0 5px 0
+
+      h2
+        font-size: 13px
+        line-height: 20px
+        flex: 1
+        color: grey
+        font-weight: 300
+
+      img
+        flex: 1
+        width: 90%
+        margin: 40px auto
+
+#about
+  background-color: #F9F8FF
+  font-family: roboto
+  padding: 100px 0
+
+  .a_container
+    max-width: 1000px
+    width: 90%
+    margin: auto
+    display: flex
+
+
+  .p_module
+    flex: 1
+    width: 40%
+    max-width: 40%
+    border: solid black 1px
+    margin: auto
+
+
+    h1
+      font-weight: 400
+      font-style: italic
+      font-size: 25px
+      border: solid black 1px
+
+
+
+
+    h2
+      font-size: 18px
+      font-weight: 300
+      border: solid black 1px
+      color: #888888
+
+    p
+      border: solid black 1px
+      font-weight: 300
+      color: #4E4E4E
+
+footer
+  padding: 100px 0
+  font-family: 'Roboto', sans-serif
+
+  .footer_container
+    max-width: 1000px
+    width: 80%
+    border: solid black 1px
+    margin: auto
+    display: flex
+
+    .c_left
+      flex: 1
+      h1
+       font-weight: 400
+       font-style: italic
+       font-size: 25px
+       border: solid black 1px
+       margin: 0
+
+      h2
+        font-size: 18px
+        font-weight: 300
+        border: solid black 1px
+        color: #888888
+        margin: 0
+
+    .c_right
+      flex: 1
+
+      label
+        padding: 10px 0
+        display: block
+        font-weight: 300
+        color: #2F2F2F
+
+      input[type=text], input[type=email]
+        border: #D8D8D8 solid 2px
+        width: 100%
+        height: 30px
+
+      input[type=submit]
+        background-color: #939393
+        width: 200px
+        height: 60px
+        color: white
+        font-weight: 300
+        letter-spacing: 1px
+        font-size: 13px
+        line-height: auto
+        margin: 20px 0 0 0
+        border: none
