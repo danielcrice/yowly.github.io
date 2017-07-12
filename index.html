@@ -10,9 +10,10 @@
   <title>Document</title>
 </head>
 <body>
+  <script>document.body.className += ' fade-out';</script>
 
   <!-- HEADER START-->
-  <header>
+  <header id="head">
 
     <!-- navigation -->
     <nav>
@@ -40,7 +41,7 @@ And are easy to use</h1>
 
   <!-- PROJECTS START -->
   <section id="projects">
-    <div id="p_title">
+    <div class="section_title">
       <h1>Recent Work</h1>
       <h2>Here's a list of our recent projects</h2>
     </div>
@@ -93,7 +94,10 @@ And are easy to use</h1>
   </section>
   <!-- ABOUT_PROCESS END-->
   <footer>
-    <class="f_title"><h1>(+44 07754309119)</h1><h2>Answering calls Monday  to friday, 9-6pm(GTM)</h2></class>
+        <div class="section_title">
+          <h1>Get in touch</h1>
+          <h2>Lets work together</h2>
+        </div>
     <div class="footer_container">
       <div class="c_left">
 
@@ -113,11 +117,11 @@ And are easy to use</h1>
         <form action="https://formspree.io/info@yowly.co.uk"
         method="POST">
         <label>Name</label>
-      <input type="text" name="name">
+      <input type="text" name="name" placeholder="Enter your name">
       <label>Email</label>
-      <input type="email" name="_replyto">
+      <input type="email" name="_replyto" placeholder="Enter your email address">
       <label>What are you looking for</label>
-      <input type="text" name="What are you looking for?">
+      <input type="text" name="What are you looking for?" placeholder="Describe how we can help you">
       <input type="submit" value="Send Enquiry">
   </form>
       </div>
@@ -125,6 +129,7 @@ And are easy to use</h1>
     </div>
 
   </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./functions/custom-min.js"></script>
 </body>
 </html>

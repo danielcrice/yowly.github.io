@@ -4,9 +4,20 @@ ul {
 a {
   text-decoration: none; }
 
+textarea, input, button {
+  outline: none; }
+
 * {
   margin: 0;
   padding: 0; }
+
+body {
+  opacity: 1;
+  transition: 1s opacity; }
+
+body.fade-out {
+  opacity: 0;
+  transition: none; }
 
 /* Header */
 header {
@@ -101,22 +112,24 @@ header {
       font-weight: 300; }
 
 /* Projects Section */
+.section_title h1 {
+  font-weight: 400i;
+  font-style: italic;
+  margin: 0 0 5px 0;
+  color: #454343;
+  font-size: 20px; }
+
+.section_title h2 {
+  font-weight: 300;
+  color: #626262;
+  font-size: 15px; }
+
 #projects {
   width: 80%;
   margin: auto;
   font-family: 'Roboto', sans-serif;
   max-width: 1000px;
   padding: 50px 0; }
-  #projects #p_title h1 {
-    font-weight: 400i;
-    font-style: italic;
-    margin: 0 0 5px 0;
-    color: #454343;
-    font-size: 20px; }
-  #projects #p_title h2 {
-    font-weight: 300;
-    color: #626262;
-    font-size: 15px; }
   #projects .p_box_container {
     width: 100%;
     display: -webkit-box;
@@ -207,24 +220,30 @@ header {
     #about .p_module h1 {
       font-weight: 400;
       font-style: italic;
-      font-size: 25px;
-      margin: 0; }
+      font-size: 20px;
+      margin: 0 0 5px 0; }
     #about .p_module h2 {
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 300;
-      color: #888888; }
+      color: #888888;
+      margin: 0 0 20px 0; }
     #about .p_module p {
       font-weight: 300;
-      color: #4E4E4E; }
+      color: #4E4E4E;
+      letter-spacing: 0.1px;
+      line-height: 22px;
+      font-size: 14px; }
 
 footer {
   padding: 100px 0;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  width: 80%; }
   footer .footer_container {
     max-width: 1000px;
     width: 80%;
-    border: solid black 1px;
-    margin: auto;
+    margin: 50px auto 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -235,13 +254,14 @@ footer {
       footer .footer_container .c_left h1 {
         font-weight: 400;
         font-style: italic;
-        font-size: 25px;
-        border: solid black 1px;
-        margin: 0; }
+        font-size: 23px;
+        margin: 35px 0 5px 0;
+        letter-spacing: 0.5px;
+        color: #414040; }
       footer .footer_container .c_left h2 {
-        font-size: 18px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
         font-weight: 300;
-        border: solid black 1px;
         color: #888888;
         margin: 0; }
     footer .footer_container .c_right {
@@ -249,22 +269,44 @@ footer {
           -ms-flex: 1;
               flex: 1; }
       footer .footer_container .c_right label {
-        padding: 10px 0;
+        padding: 25px 0 8px 0;
         display: block;
         font-weight: 300;
+        font-size: 15px;
         color: #2F2F2F; }
       footer .footer_container .c_right input[type=text], footer .footer_container .c_right input[type=email] {
-        border: #D8D8D8 solid 2px;
+        border: #D8D8D8 solid 1.3px;
         width: 100%;
-        height: 30px; }
+        height: 40px; }
+      footer .footer_container .c_right input {
+        box-sizing: border-box;
+        padding: 0 10px;
+        color: #575353;
+        font-size: 14px;
+        letter-spacing: 0.5px; }
       footer .footer_container .c_right input[type=submit] {
-        background-color: #939393;
+        background-color: #706c6c;
         width: 200px;
-        height: 60px;
+        height: 50px;
         color: white;
         font-weight: 300;
         letter-spacing: 1px;
         font-size: 13px;
         line-height: auto;
-        margin: 20px 0 0 0;
+        margin: 25px 0 0 0;
         border: none; }
+      footer .footer_container .c_right input::-webkit-input-placeholder {
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        color: #b6b1b1;
+        font-weight: 300; }
+      footer .footer_container .c_right input:-ms-input-placeholder {
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        color: #b6b1b1;
+        font-weight: 300; }
+      footer .footer_container .c_right input::placeholder {
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        color: #b6b1b1;
+        font-weight: 300; }
