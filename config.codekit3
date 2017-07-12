@@ -35,25 +35,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/functions\/custom.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/functions\/custom-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/functions\/Icon\r": {
 		"ft": 8192,
 		"oA": 2,
@@ -87,30 +68,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
-		},
 	"\/sass\/Icon\r": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/sass\/Icon\r",
 		"oF": 0
-		},
-	"\/sass\/style.sass": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/style.css",
-		"oF": 2,
-		"oS": 0,
-		"uL": 1
 		}
 	},
 "hooks": [

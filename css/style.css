@@ -13,10 +13,12 @@ textarea, input, button {
 
 body {
   opacity: 1;
+  -webkit-transition: 1s opacity;
   transition: 1s opacity; }
 
 body.fade-out {
   opacity: 0;
+  -webkit-transition: none;
   transition: none; }
 
 /* Header */
@@ -32,15 +34,50 @@ header {
   background-color: #8FA4C6;
   height: 80vh;
   font-family: 'Roboto', sans-serif;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9fbae2+1,8fa4c6+100,7db9e8+100 */
-  background: #9fbae2;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #9fbae2 1%, #8fa4c6 100%, #7db9e8 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fbae2', endColorstr='#7db9e8',GradientType=0 );
-  /* IE6-9 */ }
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+ }
+
+
+
+ @-webkit-keyframes Gradient {
+ 	0% {
+ 		background-position: 0% 50%
+ 	}
+ 	50% {
+ 		background-position: 100% 50%
+ 	}
+ 	100% {
+ 		background-position: 0% 50%
+ 	}
+ }
+
+ @keyframes Gradient {
+ 	0% {
+ 		background-position: 0% 50%
+ 	}
+ 	50% {
+ 		background-position: 100% 50%
+ 	}
+ 	100% {
+ 		background-position: 0% 50%
+ 	}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
   header nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160,7 +197,8 @@ header {
       min-width: 45%;
       width: 45%;
       margin: 15px;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       padding: 55px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -169,10 +207,12 @@ header {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      transition-duration: 0.4s; }
+      -webkit-transition-duration: 0.4s;
+              transition-duration: 0.4s; }
       #projects .p_box_container .p_box:hover {
         opacity: 0.7;
-        transition-duration: 0.2s; }
+        -webkit-transition-duration: 0.2s;
+                transition-duration: 0.2s; }
       #projects .p_box_container .p_box h1 {
         font-size: 15px;
         font-weight: 500;
@@ -279,7 +319,8 @@ footer {
         width: 100%;
         height: 40px; }
       footer .footer_container .c_right input {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         padding: 0 10px;
         color: #575353;
         font-size: 14px;
